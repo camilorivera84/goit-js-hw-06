@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../TAREA_1/IMAGES"
+		},
+		{
+			"path": "../TAREA_1"
+		}
+	],
+	"settings": {
+		"files.autoSave": "onFocusChange",
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}
