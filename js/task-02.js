@@ -6,3 +6,9 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+const listOfIngredients = document.querySelector('ul');
+ingredients.forEach((item) => {
+  const li = document.createElement('li');
+  li.textContent = item;
+  listOfIngredients.appendChild(li);
+});
