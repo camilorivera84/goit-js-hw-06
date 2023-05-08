@@ -24,11 +24,9 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-const gallery = document.querySelector('ul.gallery');
-let image = '';
-images.forEach((element) => {
-  image =
-    image +
-    `<li><img src="${element.url}" alt="${element.alt}" height= "200px" width= "250px"></li>`;
+const ul = document.querySelector('ul.gallery');
+const imagesHTML = images.map((image) => {
+  return `<li>
+   <img src="${image.url}" alt="${image.alt}" height= "200px" width= "250px"></li>`;
 });
-gallery.insertAdjacentHTML('afterbegin', image);
+ul.insertAdjacentHTML('beforeend', imagesHTML.join(''));
